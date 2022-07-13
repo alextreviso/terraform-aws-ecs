@@ -3,7 +3,7 @@ resource "aws_ecs_task_definition" "task_definition" {
   container_definitions = jsonencode([
     {
       name                     = "${var.app_name}"
-      image                    = "${var.repository_url}/${var.app_name}:latest"
+      image                    = "${var.repository_url}:latest"
       cpu                      = var.task_cpu
       memory                   = var.task_memory
       portMappings = [
