@@ -32,8 +32,7 @@ resource "aws_iam_role_policy" "ecs-task" {
       ],
       "Action": [
         "ecr:*",
-        "logs:CreateLogStream",
-        "logs:PutLogEvents"
+        "logs:*"
       ]
     }
   ]
