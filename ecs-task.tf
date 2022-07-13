@@ -15,7 +15,7 @@ resource "aws_ecs_task_definition" "task_definition" {
       logConfiguration = {
         logDriver = "awslogs"
         options = {
-          awslogs-create-group = true
+          awslogs-create-group = "true"
           awslogs-group = "/ecs/${var.app_name}"
           awslogs-region = var.region
           awslogs-stream-prefix = "ecs"
