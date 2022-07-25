@@ -1,4 +1,4 @@
 data "aws_acm_certificate" "crt" {
-  domain   = var.certificate
+  domain   = var.domain
   statuses = ["ISSUED"]
 }
