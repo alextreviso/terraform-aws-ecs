@@ -11,5 +11,3 @@ variable "allowed_cidrs" {}
 variable "healthcheck_url" {}
 variable "private_access" {}
 variable "repository_url" {}
-variable "domain" {}
-variable "dns_name" {}
